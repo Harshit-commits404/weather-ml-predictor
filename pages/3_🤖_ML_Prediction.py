@@ -33,4 +33,4 @@ if "prediction" in st.session_state:
     c1.metric("Current Temperature", f"{w['temperature']:.1f} °C")
     c2.metric("Predicted Temperature", f"{st.session_state['prediction']:.1f} °C")
     c3.metric("Difference", f"{st.session_state['prediction']-w['temperature']:+.1f} °C")
-    st.caption("Note: the included demo model is trained on synthetic historical-like data. Replace it with real historical data for meaningful forecasting.")
+    st.caption("Note: the included demo model is trained on synthetic historical-like data.")
